@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محول العملات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>محول العملات</h1>
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="أدخل المبلغ" value="1">
+            <select id="from-currency">
+                <option value="USD">دولار أمريكي (USD)</option>
+                <option value="EUR">يورو (EUR)</option>
+                <option value="SAR">ريال سعودي (SAR)</option>
+                <option value="EGP">جنيه مصري (EGP)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <input type="number" id="converted-amount" placeholder="المبلغ المحول" readonly>
+            <select id="to-currency">
+                <option value="EUR">يورو (EUR)</option>
+                <option value="USD">دولار أمريكي (USD)</option>
+                <option value="SAR">ريال سعودي (SAR)</option>
+                <option value="EGP">جنيه مصري (EGP)</option>
+            </select>
+        </div>
+        <button id="convert-btn">تحويل</button>
+        <p id="rate-info"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
